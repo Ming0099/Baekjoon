@@ -1,0 +1,17 @@
+import java.util.Scanner;
+public class B5597 {
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        int ar[] = new int[30];
+        int n;
+        for(int i=0; i<28; i++){
+            n = sc.nextInt();
+            ar[n-1]++;
+        }
+        for(int i=0; i<30; i++){
+            if(ar[i]==0){
+                System.out.println(i+1);
+            }
+        }
+    }
+}
